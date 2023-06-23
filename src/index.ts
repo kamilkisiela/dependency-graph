@@ -139,13 +139,13 @@ export class DepGraph<T> {
       delete this.nodes[name];
       delete this.outgoingEdges[name];
       delete this.incomingEdges[name];
-      [this.incomingEdges, this.outgoingEdges].forEach(function (edgeList) {
-        Object.keys(edgeList).forEach(function (key) {
+      [this.incomingEdges, this.outgoingEdges].forEach((edgeList) => {
+        Object.keys(edgeList).forEach((key) => {
           const idx = edgeList[key].indexOf(name);
           if (idx >= 0) {
             edgeList[key].splice(idx, 1);
           }
-        }, this);
+        });
       });
     }
   }
