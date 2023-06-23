@@ -6,7 +6,7 @@ Simple dependency graph
 
 This is a simple dependency graph useful for determining the order to do a list of things that depend on certain items being done before they are.
 
-To use, `npm install dependency-graph`.
+To use, `npm install @kamilkisiela/dependency-graph`.
 
 ## API
 
