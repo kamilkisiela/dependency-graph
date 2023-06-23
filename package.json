@@ -1,8 +1,42 @@
 {
-  "name": "dependency-graph",
+  "name": "@kamilkisiela/dependency-graph",
   "description": "Simple dependency graph.",
-  "version": "0.11.0",
-  "author": "Jim Riecken <jriecken@gmail.com>",
+  "version": "0.12.0",
+  "author": {
+    "email": "kamil.kisiela@gmail.com",
+    "name": "Kamil Kisiela",
+    "url": "https://github.com/kamilkisiela"
+  },
+  "sideEffects": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "packageManager": "pnpm@7.32.4",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/typings/index.d.cts",
+        "default": "./dist/cjs/index.js"
+      },
+      "import": {
+        "types": "./dist/typings/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "default": {
+        "types": "./dist/typings/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "typings": "dist/typings/index.d.ts",
+  "typescript": {
+    "definition": "dist/typings/index.d.ts"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "access": "public"
+  },
+  "type": "module",
   "keywords": [
     "dependency",
     "graph"
@@ -10,22 +44,26 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jriecken/dependency-graph.git"
+    "url": "git://github.com/kamilkisiela/dependency-graph.git"
   },
-  "bugs": {
-    "url": "http://github.com/jriecken/dependency-graph/issues"
-  },
-  "main": "./lib/dep_graph.js",
   "scripts": {
-    "test": "jasmine specs/**/*.js"
+    "prepublishOnly": "pnpm run build",
+    "build": "bob build",
+    "test": "vitest .",
+    "release": "changeset publish"
   },
-  "dependencies": {},
-  "optionalDependencies": {},
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
   "devDependencies": {
-    "jasmine": "3.5.0"
+    "@changesets/changelog-github": "0.4.8",
+    "@changesets/cli": "2.26.1",
+    "vitest": "0.32.2",
+    "typescript": "5.1.3",
+    "bob-the-bundler": "7.0.1"
   },
   "engines": {
-    "node": ">= 0.6.0"
-  },
-  "types": "./lib/index.d.ts"
+    "node": ">= 16.0.0",
+    "pnpm": ">=7"
+  }
 }

@@ -1,2 +1,6 @@
-# Ignore node_modules
-node_modules
+.DS_Store/
+.idea/
+node_modules/
+dist/
+*.log
+.bob
