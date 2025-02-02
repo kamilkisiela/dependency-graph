@@ -10,7 +10,7 @@
   "sideEffects": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "packageManager": "pnpm@7.33.7",
+  "packageManager": "pnpm@9.15.5",
   "exports": {
     ".": {
       "require": {
