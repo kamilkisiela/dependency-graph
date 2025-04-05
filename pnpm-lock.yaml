@@ -5,7 +5,7 @@ specifiers:
   '@changesets/cli': 2.28.1
   bob-the-bundler: 7.0.1
   tslib: ^2.4.0
-  typescript: 5.8.2
+  typescript: 5.8.3
   vitest: 0.34.6
 
 dependencies:
@@ -14,8 +14,8 @@ dependencies:
 devDependencies:
   '@changesets/changelog-github': 0.5.1
   '@changesets/cli': 2.28.1
-  bob-the-bundler: 7.0.1_typescript@5.8.2
-  typescript: 5.8.2
+  bob-the-bundler: 7.0.1_typescript@5.8.3
+  typescript: 5.8.3
   vitest: 0.34.6
 
 packages:
@@ -773,7 +773,7 @@ packages:
       is-windows: 1.0.2
     dev: true
 
-  /bob-the-bundler/7.0.1_typescript@5.8.2:
+  /bob-the-bundler/7.0.1_typescript@5.8.3:
     resolution: {integrity: sha512-TFpj2AcCzTNVyMZ5ixHqJndJ9KyIUGrgTMMciz88X0HCRDujoUQL+D+61shAY+K20bM4q5Yn/NunbdiPC9drjA==}
     engines: {node: '>=16', pnpm: '>=8'}
     hasBin: true
@@ -789,7 +789,7 @@ packages:
       p-limit: 4.0.0
       resolve.exports: 2.0.3
       tslib: 2.8.1
-      typescript: 5.8.2
+      typescript: 5.8.3
       yargs: 17.7.2
       zod: 3.24.2
     dev: true
@@ -1672,8 +1672,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript/5.8.2:
-    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
+  /typescript/5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
