@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@changesets/changelog-github': 0.5.1
-  '@changesets/cli': 2.29.3
+  '@changesets/cli': 2.29.4
   bob-the-bundler: 7.0.1
   tslib: ^2.4.0
   typescript: 5.8.3
@@ -13,7 +13,7 @@ dependencies:
 
 devDependencies:
   '@changesets/changelog-github': 0.5.1
-  '@changesets/cli': 2.29.3
+  '@changesets/cli': 2.29.4
   bob-the-bundler: 7.0.1_typescript@5.8.3
   typescript: 5.8.3
   vitest: 0.34.6
@@ -70,8 +70,8 @@ packages:
       - encoding
     dev: true
 
-  /@changesets/cli/2.29.3:
-    resolution: {integrity: sha512-TNhKr6Loc7I0CSD9LpAyVNSxWBHElXVmmvQYIZQvaMan5jddmL7geo3+08Wi7ImgHFVNB0Nhju/LzXqlrkoOxg==}
+  /@changesets/cli/2.29.4:
+    resolution: {integrity: sha512-VW30x9oiFp/un/80+5jLeWgEU6Btj8IqOgI+X/zAYu4usVOWXjPIK5jSSlt5jsCU7/6Z7AxEkarxBxGUqkAmNg==}
     hasBin: true
     dependencies:
       '@changesets/apply-release-plan': 7.0.12
