@@ -1,7 +1,7 @@
 {
   "name": "@kamilkisiela/dependency-graph",
   "description": "Simple dependency graph.",
-  "version": "0.12.0",
+  "version": "1.0.0",
   "author": {
     "email": "kamil.kisiela@gmail.com",
     "name": "Kamil Kisiela",
